@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center; width: 400px; border: 200px; color: green;">Currency Exchange</h1>
+    <div class="exchange-box">
+      <div class="dropdown">
+        <button class="dropbtn" id="from-bnt">CURRENCY</button>
+        <div class="dropdown-content" id="from-currency">
+          <a href="#">USD</a>
+          <a href="#">KRW</a>
+          <a href="#">VND</a>
+        </div>
+      </div>
+      <div class="input-area">
+          <input type="number" id="from-input" onkeyup="convertFrom()"/>
+          <div id="from-text">달러</div>
+      </div>
+    </div>
+
+    <h1 style="text-align: center; width : 400px; border: 100px;">=</h1>
+
+    <div class="exchange-box">
+        <div class="dropdown">
+          <button class="dropbtn" id="to-bnt">CURRENCY</button>
+          <div class="dropdown-content" id="to-currency">
+            <a href="#">USD</a>
+            <a href="#">KRW</a>
+            <a href="#">VND</a>
+          </div>
+        </div>
+        <div class="input-area">
+            <input type="number" id="to-input" onkeyup="convertTo()"/>
+            <div id="to-text">달러</div>
+        </div>
+      </div>
+  
+
+    <script src="main.js"></script>
+  </body>
+</html>
